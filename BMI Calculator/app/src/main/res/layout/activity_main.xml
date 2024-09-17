@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/application_title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerInParent="true"
+       android:gravity="center"
+       android:text="@string/application_title"
+       android:layout_marginTop="50dp"
+       android:textSize="24sp"
+       android:textStyle="bold" />
+
+   <EditText
+       android:id="@+id/weight_edit_text"
+       android:layout_width="match_parent"
+       android:layout_height="52dp"
+       android:layout_below="@+id/application_title"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="50dp"
+       android:layout_marginEnd="20dp"
+       android:layout_marginBottom="10dp"
+       android:hint="@string/weight_string"
+       android:inputType="number|numberDecimal" />
+
+   <EditText
+       android:id="@+id/height_edit_text"
+       android:layout_width="match_parent"
+       android:layout_height="52dp"
+       android:layout_below="@+id/weight_edit_text"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginEnd="20dp"
+       android:layout_marginBottom="10dp"
+       android:hint="@string/height_string"
+       android:inputType="number|numberDecimal"/>
+
+   <Button
+       android:id="@+id/calculate_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/height_edit_text"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="30dp"
+       android:backgroundTint="#000000"
+       android:text="@string/calculate_string" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/calculate_button"
+       android:text="@string/your_bmi"
+       android:textSize="16sp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="50dp"
+       android:id="@+id/BMI_textview"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/calculate_button"
+       android:text="@string/empty_string"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="50dp"
+       android:id="@+id/BMI_value_textview"
+       android:layout_toRightOf="@id/BMI_textview"
+       android:layout_marginStart="50dp"/>
+
+   <TextView
+       android:id="@+id/BMI_category_textview"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/BMI_textview"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"
+       android:text="@string/bmi_category"
+       android:textSize="16sp"
+       android:visibility="gone" />
+</RelativeLayout>

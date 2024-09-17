@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Animation Demo</string>
+    <string name="height_string">Enter your height (m)</string>
+    <string name="weight_string">Enter your weight (kg)</string>
+    <string name="application_title">BMI Calculator</string>
+    <string name="bmi_category">BMI category</string>
+    <string name="your_bmi">Your BMI is</string>
+    <string name="empty_string">........</string>
+    <string name="calculate_string">Calculate</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="height_string">Enter your height</string>
+    <string name="weight_string">Enter your weight</string>
+    <string name="application_title">BMI Calculator</string>
+</resources>
